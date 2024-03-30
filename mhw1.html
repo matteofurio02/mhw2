@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./mhw1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>MangaYo!</title>
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="header-banner">
+                <a class="banner-link" href="">
+                    <p class="banner-text">SPEDIZIONE GRATUITA DA €39</p>
+                </a>
+                <a href="" class="banner-close-btn">
+                    <svg viewBox="0 -960 960 960" class="close-icon">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="left-top">
+                            <span class=" client-service">
+                                <a href="#" class="top-link client-service-btn">
+                                    servizio clienti
+                                </a>
+                            </span>
+                        </div>
+                        <div class="right-top">
+                            <div class="right-element">
+                                <button class="darkmode-switcher-btn">
+                                    <span class="icon-box switch-icon-box" title="Cambia il tema">
+                                        <svg class="top-icon switch-icon">
+                                            <path d="M5,21.21A10,10,0,1,0,5,2.79,10,10,0,0,1,5,21.21Z">
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="right-element">
+                                <a href="#" class="top-link user-info" title="Accedi al tuo account cliente">
+                                    <span class="icon-box">
+                                        <svg class="top-icon user-icon">
+                                            <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M15.364,11.636 C14.384,10.656 13.217,9.930 11.944,9.491 C13.307,8.552 14.203,6.980 14.203,5.203 C14.203,2.334 11.869,-0.000 9.000,-0.000 C6.131,-0.000 3.797,2.334 3.797,5.203 C3.797,6.980 4.693,8.552 6.056,9.491 C4.783,9.930 3.616,10.656 2.636,11.636 C0.936,13.336 0.000,15.596 0.000,18.000 L1.406,18.000 C1.406,13.813 4.813,10.406 9.000,10.406 C13.187,10.406 16.594,13.813 16.594,18.000 L18.000,18.000 C18.000,15.596 17.064,13.336 15.364,11.636 ZM9.000,9.000 C6.906,9.000 5.203,7.297 5.203,5.203 C5.203,3.110 6.906,1.406 9.000,1.406 C11.094,1.406 12.797,3.110 12.797,5.203 C12.797,7.297 11.094,9.000 9.000,9.000 Z"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="user-text top-text">
+                                        accedi
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="right-element">
+                                <a href="#" class="top-link wishlist-box" title="Lista dei desideri">
+                                    <span class="icon-box">
+                                        <svg class="top-icon">
+                                            <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M14.357,0.000 C12.655,0.000 11.061,0.686 10.000,1.837 C8.939,0.686 7.345,0.000 5.643,0.000 C2.531,0.000 -0.000,2.254 -0.000,5.025 C-0.000,7.194 1.453,9.704 4.318,12.483 C6.523,14.622 8.921,16.279 9.604,16.735 L10.000,17.000 L10.396,16.735 C11.079,16.279 13.477,14.622 15.682,12.483 C18.547,9.704 20.000,7.194 20.000,5.025 C20.000,2.254 17.469,0.000 14.357,0.000 ZM14.711,11.689 C12.897,13.449 10.946,14.871 10.000,15.526 C9.054,14.871 7.103,13.449 5.289,11.689 C2.692,9.169 1.319,6.864 1.319,5.025 C1.319,2.902 3.258,1.174 5.643,1.174 C7.212,1.174 8.660,1.936 9.423,3.162 L10.000,4.088 L10.577,3.162 C11.340,1.936 12.788,1.174 14.357,1.174 C16.742,1.174 18.681,2.902 18.681,5.025 C18.681,6.864 17.308,9.169 14.711,11.689 Z"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="wishlist-text top-text">
+                                        lista dei desideri:
+                                        <span class="wishlist-count count">0</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="right-element">
+                                <a href="#" class="top-link cart-box">
+                                    <span class="icon-box">
+                                        <svg class="top-icon">
+                                            <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M0.610,1.187 L2.614,1.187 L7.142,14.384 C6.187,14.707 5.500,15.589 5.500,16.625 C5.500,17.934 6.596,19.000 7.944,19.000 C9.292,19.000 10.388,17.934 10.388,16.625 C10.388,16.192 10.267,15.787 10.058,15.437 L16.219,15.437 C16.010,15.787 15.889,16.192 15.889,16.625 C15.889,17.934 16.985,19.000 18.333,19.000 C19.681,19.000 20.777,17.934 20.777,16.625 C20.777,15.315 19.681,14.250 18.333,14.250 L8.384,14.250 L7.570,11.875 L18.944,11.875 C19.207,11.875 19.441,11.711 19.524,11.469 L21.968,4.344 C22.031,4.163 21.999,3.964 21.885,3.809 C21.769,3.654 21.585,3.562 21.389,3.562 L4.718,3.562 L3.635,0.406 C3.551,0.163 3.318,-0.000 3.055,-0.000 L0.610,-0.000 C0.273,-0.000 -0.001,0.266 -0.001,0.594 C-0.001,0.922 0.273,1.187 0.610,1.187 ZM18.333,15.437 C19.007,15.437 19.555,15.970 19.555,16.625 C19.555,17.279 19.007,17.812 18.333,17.812 C17.659,17.812 17.111,17.279 17.111,16.625 C17.111,15.970 17.659,15.437 18.333,15.437 ZM7.944,15.437 C8.618,15.437 9.166,15.970 9.166,16.625 C9.166,17.279 8.618,17.812 7.944,17.812 C7.270,17.812 6.722,17.279 6.722,16.625 C6.722,15.970 7.270,15.437 7.944,15.437 ZM20.541,4.750 L18.504,10.687 L7.162,10.687 L5.125,4.750 L20.541,4.750 Z"></path>
+                                        </svg>
+                                    </span>
+                                    <span class="cart-text top-text">
+                                        carrello: 
+                                        <span class="cart-count count">0</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="container nav-container">
+                    <div class="row nav-row">
+                        <div class="left-nav">
+                            <span class="logo-container">
+                                <a href="#" class="logo-link">
+                                    <img src="./images/mangaYo header.svg" alt="" class="logo">
+                                </a>
+                                
+                            </span>
+                        </div>
+                        <div class="center-nav">
+                            <ul class="nav-menu">
+                                <li class="nav-element">
+                                    <a href="#" class="nav-link">
+                                        <span class="nav-text navbar-text">novità</span>
+                                    </a>
+                                </li>
+                                <li class="nav-element">
+                                    <a href="#" class="nav-link">
+                                        <span class="nav-text navbar-text">manga</span>
+                                    </a>
+                                </li>
+                                <li class="nav-element">
+                                    <a href="#" class="nav-link">
+                                        <span class="nav-text navbar-text">giappone</span>
+                                    </a>
+                                </li>
+                                <li class="nav-element">
+                                    <a href="#" class="nav-link">
+                                        <span class="nav-text navbar-text">figure</span>
+                                    </a>
+                                </li>
+                                <li class="nav-element">
+                                    <a href="#" class="nav-link">
+                                        <span class="nav-text navbar-text">card game</span>
+                                    </a>
+                                </li>
+                                <li class="nav-element">
+                                    <a href="#" class="nav-link">
+                                        <span class="nav-text navbar-text">preordini</span>
+                                        <div class="superior-box">
+                                            <span class="sup-text">
+                                                novità
+                                            </span> 
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right-nav">
+                            <div class="right-element-nav">
+                                <a href="#" class="search-button ">
+                                    <span class="search-text navbar-text">cerca</span>
+                                    <span class="search-icon-box">
+                                        <svg class="search-icon">
+                                            <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M19.826,18.980 L14.965,14.120 C16.269,12.621 17.059,10.665 17.059,8.528 C17.059,3.823 13.231,0.000 8.529,0.000 C3.823,0.000 -0.000,3.827 -0.000,8.528 C-0.000,13.228 3.828,17.055 8.529,17.055 C10.667,17.055 12.623,16.266 14.122,14.962 L18.984,19.823 C19.099,19.938 19.254,20.000 19.405,20.000 C19.556,20.000 19.711,19.942 19.826,19.823 C20.057,19.592 20.057,19.211 19.826,18.980 ZM1.193,8.528 C1.193,4.483 4.484,1.197 8.525,1.197 C12.570,1.197 15.857,4.488 15.857,8.528 C15.857,12.568 12.570,15.862 8.525,15.862 C4.484,15.862 1.193,12.572 1.193,8.528 Z"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="homeslider-block">
+                <div class="homeslider">
+                    <div class="slider-container">
+                        <div class="stage">
+                                <div class="slider-element active">
+                                <a href="#" class="slider-item">
+                                    <img src="./images/img1.jpeg" alt="" class="slider-img desktop-hidden">
+                                    <img src="./images/img1.jpeg" alt="" class="slider-img media-hidden">
+                                </a>
+                            </div>
+                            <div class="slider-element">
+                                <a href="#" class="slider-item">
+                                    <img src="./images/img2.jpeg" alt="" class="slider-img desktop-hidden">
+                                    <img src="./images/img2.jpeg" alt="" class="slider-img media-hidden">
+                                </a>
+                            </div>
+                            <div class="slider-element">
+                                <a href="#" class="slider-item">
+                                    <img src="./images/img3.jpeg" alt="" class="slider-img desktop-hidden">
+                                    <img src="./images/img3.jpeg" alt="" class="slider-img media-hidden">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dots-container container">
+                        <div class="dot active">
+                            <span></span>
+                        </div>
+                        <div class="dot">
+                            <span></span>
+                        </div>
+                        <div class="dot">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <section class="main-section">
+            <div class="container">
+                <div class="homeproducts-container">
+                    <div class="homeproducts-block">
+                        <div class="products-title">
+                            <span>
+                                ultime uscite
+                            </span>
+                        </div>
+                        <div class="products">
+                            <div class="products-outer">
+                                <div class="products-stage">
+                                    <div class="product-item active">
+                                        <section class="product-miniature">
+                                            <div class="thumbnail-container">
+                                                <div class="thumbnail-image">
+                                                    <a href="#" class="thumbnail">
+                                                        <img src="https://mangayo.it/35007-home_default/ginka-gluna-1.jpg" alt="" class="thumb">
+                                                    </a>
+                                                </div>
+                                                <div class="product-description">
+                                                    <div class="product-title">
+                                                        <a href="" class="product-link">Ginka & Gluna 1</a>
+                                                    </div>
+                                                    <div class="product-price-and-shipping">
+                                                        <div class="product-price-block">
+                                                            <span class="price">5,90</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-availability">
+                                                        <div class="product-cart-add">
+                                                            <div class="product-add-button">
+                                                                <button class="product-btn">
+                                                                    <span>Aggiungi al carrello</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="product-item active">
+                                        <section class="product-miniature">
+                                            <div class="thumbnail-container">
+                                                <div class="thumbnail-image">
+                                                    <a href="#" class="thumbnail">
+                                                        <img src="https://mangayo.it/34943-home_default/scums-wish-9.jpg" alt="" class="thumb">
+                                                    </a>
+                                                </div>
+                                                <div class="product-description">
+                                                    <div class="product-title">
+                                                        <a href="" class="product-link">Scum wish 9</a>
+                                                    </div>
+                                                    <div class="product-price-and-shipping">
+                                                        <div class="product-price-block">
+                                                            <span class="price">5,90</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-availability">
+                                                        <div class="product-cart-add">
+                                                            <div class="product-add-button">
+                                                                <button class="product-btn">
+                                                                    <span>Aggiungi al carrello</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="product-item active">
+                                        <section class="product-miniature">
+                                            <div class="thumbnail-container">
+                                                <div class="thumbnail-image">
+                                                    <a href="#" class="thumbnail">
+                                                        <img src="https://mangayo.it/35003-home_default/worlds-end-harem-16-after-world.jpg" alt="" class="thumb">
+                                                    </a>
+                                                </div>
+                                                <div class="product-description">
+                                                    <div class="product-title">
+                                                        <a href="" class="product-link">worlds end harem 16 -...</a>
+                                                    </div>
+                                                    <div class="product-price-and-shipping">
+                                                        <div class="product-price-block">
+                                                            <span class="price">5,90</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-availability">
+                                                        <div class="product-cart-add">
+                                                            <div class="product-add-button">
+                                                                <button class="product-btn">
+                                                                    <span>Aggiungi al carrello</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="product-item active">
+                                        <section class="product-miniature">
+                                            <div class="thumbnail-container">
+                                                <div class="thumbnail-image">
+                                                    <a href="#" class="thumbnail">
+                                                        <img src="https://mangayo.it/35021-home_default/shonan-junai-gumi-3-le-avventure-del-giovane-gto-black-edition.jpg" alt="" class="thumb">
+                                                    </a>
+                                                </div>
+                                                <div class="product-description">
+                                                    <div class="product-title">
+                                                        <a href="" class="product-link">Shonan junai gumi 3 - le...</a>
+                                                    </div>
+                                                    <div class="product-price-and-shipping">
+                                                        <div class="product-price-block">
+                                                            <span class="price">5,90</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-availability">
+                                                        <div class="product-cart-add">
+                                                            <div class="product-add-button">
+                                                                <button class="product-btn">
+                                                                    <span>Aggiungi al carrello</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="product-item ">
+                                        <section class="product-miniature">
+                                            <div class="thumbnail-container">
+                                                <div class="thumbnail-image">
+                                                    <a href="#" class="thumbnail">
+                                                        <img src="https://mangayo.it/34979-home_default/non-mi-stuzzicare-takagi-6.jpg" alt="" class="thumb">
+                                                    </a>
+                                                </div>
+                                                <div class="product-description">
+                                                    <div class="product-title">
+                                                        <a href="" class="product-link">non mi stuzzicare, tagaki! 6</a>
+                                                    </div>
+                                                    <div class="product-price-and-shipping">
+                                                        <div class="product-price-block">
+                                                            <span class="price">5,90</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-availability">
+                                                        <div class="product-cart-add">
+                                                            <div class="product-add-button">
+                                                                <button class="product-btn">
+                                                                    <span>Aggiungi al carrello</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-dots-container container">
+                                <div class="dot active">
+                                    <span></span>
+                                </div>
+                                <div class="dot">
+                                    <span></span>
+                                </div>
+                                <div class="dot">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="homeproducts-container">
+                    <div class="homeproducts-block">
+                        <div class="products-title">
+                            <span>
+                                ultime uscite
+                            </span>
+                        </div>
+                        <div class="products">
+                            <div class="products-outer">
+                                <div class="products-stage">
+                                    <div class="product-item active">
+                                        <section class="product-miniature">
+                                            <div class="thumbnail-container">
+                                                <div class="thumbnail-image">
+                                                    <a href="#" class="thumbnail">
+                                                        <img src="https://mangayo.it/35007-home_default/ginka-gluna-1.jpg" alt="" class="thumb">
+                                                    </a>
+                                                </div>
+                                                <div class="product-description">
+                                                    <div class="product-title">
+                                                        <a href="" class="product-link">Ginka & Gluna 1</a>
+                                                    </div>
+                                                    <div class="product-price-and-shipping">
+                                                        <div class="product-price-block">
+                                                            <span class="price">5,90</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-availability">
+                                                        <div class="product-cart-add">
+                                                            <div class="product-add-button">
+                                                                <button class="product-btn">
+                                                                    <span>Aggiungi al carrello</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="product-item active">
+                                        <section class="product-miniature">
+                                            <div class="thumbnail-container">
+                                                <div class="thumbnail-image">
+                                                    <a href="#" class="thumbnail">
+                                                        <img src="https://mangayo.it/34943-home_default/scums-wish-9.jpg" alt="" class="thumb">
+                                                    </a>
+                                                </div>
+                                                <div class="product-description">
+                                                    <div class="product-title">
+                                                        <a href="" class="product-link">Scum wish 9</a>
+                                                    </div>
+                                                    <div class="product-price-and-shipping">
+                                                        <div class="product-price-block">
+                                                            <span class="price">5,90</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-availability">
+                                                        <div class="product-cart-add">
+                                                            <div class="product-add-button">
+                                                                <button class="product-btn">
+                                                                    <span>Aggiungi al carrello</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="product-item active">
+                                        <section class="product-miniature">
+                                            <div class="thumbnail-container">
+                                                <div class="thumbnail-image">
+                                                    <a href="#" class="thumbnail">
+                                                        <img src="https://mangayo.it/35003-home_default/worlds-end-harem-16-after-world.jpg" alt="" class="thumb">
+                                                    </a>
+                                                </div>
+                                                <div class="product-description">
+                                                    <div class="product-title">
+                                                        <a href="" class="product-link">worlds end harem 16 -...</a>
+                                                    </div>
+                                                    <div class="product-price-and-shipping">
+                                                        <div class="product-price-block">
+                                                            <span class="price">5,90</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-availability">
+                                                        <div class="product-cart-add">
+                                                            <div class="product-add-button">
+                                                                <button class="product-btn">
+                                                                    <span>Aggiungi al carrello</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="product-item active">
+                                        <section class="product-miniature">
+                                            <div class="thumbnail-container">
+                                                <div class="thumbnail-image">
+                                                    <a href="#" class="thumbnail">
+                                                        <img src="https://mangayo.it/35021-home_default/shonan-junai-gumi-3-le-avventure-del-giovane-gto-black-edition.jpg" alt="" class="thumb">
+                                                    </a>
+                                                </div>
+                                                <div class="product-description">
+                                                    <div class="product-title">
+                                                        <a href="" class="product-link">Shonan junai gumi 3 - le...</a>
+                                                    </div>
+                                                    <div class="product-price-and-shipping">
+                                                        <div class="product-price-block">
+                                                            <span class="price">5,90</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-availability">
+                                                        <div class="product-cart-add">
+                                                            <div class="product-add-button">
+                                                                <button class="product-btn">
+                                                                    <span>Aggiungi al carrello</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <div class="product-item ">
+                                        <section class="product-miniature">
+                                            <div class="thumbnail-container">
+                                                <div class="thumbnail-image">
+                                                    <a href="#" class="thumbnail">
+                                                        <img src="https://mangayo.it/34979-home_default/non-mi-stuzzicare-takagi-6.jpg" alt="" class="thumb">
+                                                    </a>
+                                                </div>
+                                                <div class="product-description">
+                                                    <div class="product-title">
+                                                        <a href="" class="product-link">non mi stuzzicare, tagaki! 6</a>
+                                                    </div>
+                                                    <div class="product-price-and-shipping">
+                                                        <div class="product-price-block">
+                                                            <span class="price">5,90</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-availability">
+                                                        <div class="product-cart-add">
+                                                            <div class="product-add-button">
+                                                                <button class="product-btn">
+                                                                    <span>Aggiungi al carrello</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="products-dots-container container">
+                                <div class="dot active">
+                                    <span></span>
+                                </div>
+                                <div class="dot">
+                                    <span></span>
+                                </div>
+                                <div class="dot">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="left-footer">
+                            <div class="desktop-logo">
+                                <a href="#">
+                                    <img src="./images/mangaYo header.svg" alt="" class="footer-logo">
+                                </a> 
+                            </div>
+                            <div class="info-box">
+                                <span class="site info">
+                                    Via Giuseppe Trabacchi 16
+                                </span>
+                                <span class="site info">
+                                    00133 Roma
+                                </span>
+                                <span class="site info">
+                                    Roma
+                                </span>
+                                <span class="site info">
+                                    Italia
+                                </span>
+                                <span>servizioclienti@mangayo.it</span>
+                                <a href="#" class="site info">
+                                    contattaci su 
+                                    <span class="whatsapp">WhatsApp</span>
+                                </a>
+                            </div>
+                            <div class="social-container">
+                                <a href="#" class="footer-icon-container facebook">
+                                    <svg viewBox="0 0 320 512" class="footer-icon">
+                                        <path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="footer-icon-container instagram">
+                                    <svg viewBox="0 0 448 512" class="footer-icon">
+                                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-footer">
+                            <div class="center-left footer-infobox">
+                                <span class="title">prodotti</span>
+                                <div class="arrow-icon-box">
+                                    <svg class="arrow-icon">
+                                        <path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/>
+                                    </svg>
+                                </div>
+                                <ul class="footer-sub-menu">
+                                    <li class="sub-menu-item">
+                                        <a href="#">
+                                            <span>novità</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="#">
+                                            <span>manga</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="">
+                                            <span>giappone</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="">
+                                            <span>figure</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="#">
+                                            <span>preordine</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="#">
+                                            <span>one piece TCG</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="center-right footer-infobox">
+                                <span class="title">informazioni</span>
+                                <ul class="footer-sub-menu">
+                                    <li class="sub-menu-item">
+                                        <a href="#">
+                                            <span>chi siamo</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="#">
+                                            <span>ambiente</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="">
+                                            <span>termini e condizioni</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="">
+                                            <span>spedizioni e resi</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="#">
+                                            <span>18App</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="#">
+                                            <span>carta del docente</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="">
+                                            <span>privacy policy</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="#">
+                                            <span>cookie policy</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="#">
+                                            <span>cancellazione account</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="">
+                                            <span>domande frequenti</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="#">
+                                            <span>lavora con noi</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="#">
+                                            <span>eventi</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="">
+                                            <span>carte cultura</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="#">
+                                            <span>contattaci</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right-footer account-information footer-infobox">
+                                <span class="title">il tuo account</span>
+                                <ul class="footer-sub-menu">
+                                    <li class="sub-menu-item">
+                                        <a href="#">
+                                            <span>informazioni personali</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="#">
+                                            <span>ordini</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="">
+                                            <span>note di credito</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="">
+                                            <span>indirizzi</span>
+                                        </a>
+                                    </li>
+                                    <li class="sub-menu-item">
+                                        <a href="#">
+                                            <span>buoni</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="copyright-row row">
+                        <div class="left-top footer-left-copyright">
+                            <div class="copyright">
+                                <a href="#">
+                                    <span class="copyright-bold">
+                                        ©2024 MangaYo! s.r.l.s
+                                    </span>
+                                    P.IVA: 15931551004
+                                </a>
+                            </div>
+                        </div>
+                        <div class="right-top footer-right-copyright">
+                            <ul class="trust-badges-list">
+                                <li class="badges-icon-box">
+                                    <img class="badges-icon" src="./images/footerbadges1.png" alt="">
+                                </li>
+                                <li class="badges-icon-box">
+                                    <img class="badges-icon" src="./images/footerbadges2.png" alt="">
+                                </li>
+                                <li class="badges-icon-box">
+                                    <img class="badges-icon" src="./images/footerbadges3.png" alt="">
+                                </li>
+                                <li class="badges-icon-box">
+                                    <img class="badges-icon" src="./images/footerbadges4.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
