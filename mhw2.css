@@ -769,9 +769,70 @@ Footer
 .copyright-link:hover {
     color: black;
 }
+.overlay-cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 50;
+}
+.cart-menu {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 350px;
+    height: 100%;
+    transition:all 0.5s ease-in-out;
+    z-index: 100;
+    overflow-y: scroll;
+}
+.close-btn-container {
+    left: unset;
+    right: 20px;
+    top: 25px;
+    position: absolute;
+    cursor: pointer;
+}
+.close-icon {
+    filter: invert(57%) sepia(94%) saturate(7474%) hue-rotate(331deg) brightness(96%) contrast(111%);
+    height: 28px;
+    width: 28px;
+}
+.cart-dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;   
+}
+
+.cart-title {
+    display: flex;
+    justify-content: center;
+    padding: 25px 20px;
+    text-align: left;
+}
+.cart-title p{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.no-items {
+    padding: 0 20px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
 /*
     MEDIA
 */
+
 
 @media (min-width: 1200px) {
     .container{
