@@ -280,6 +280,19 @@ Header con
     margin-right: auto;
     justify-content: center;
 }
+.nav-menu.sticky {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    background: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
 .nav-menu {
     margin: 0;
     display: flex;
@@ -752,6 +765,9 @@ Footer
     display: none;
     height: 24px;
     width: 24px;
+}
+.copyright-link:hover {
+    color: black;
 }
 /*
     MEDIA

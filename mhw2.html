@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./mhw1.css">
+    <link rel="stylesheet" href="./mhw2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <script src="mhw2.js" defer></script>
+
     <title>MangaYo!</title>
 </head>
 <body>
@@ -743,7 +746,7 @@
                     <div class="copyright-row row">
                         <div class="left-top footer-left-copyright">
                             <div class="copyright">
-                                <a href="#">
+                                <a href="#" class="copyright-link">
                                     <span class="copyright-bold">
                                         ©2024 MangaYo! s.r.l.s
                                     </span>
@@ -770,7 +773,53 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> 
+    </div>
+    <div class="overlay-cart"></div>
+    <div class="cart-menu">
+        <div class="close-btn-container">
+            <svg viewBox="0 -960 960 960" class="close-icon">
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+            </svg>
+        </div>
+        <div class="cart-dropdownmenu">
+            <div class="cart-title">
+                <p>carrello</p>
+            </div>
+            <ul class="cart-items">
+                
+            </ul>
+            <div class="cart-bottom">
+                <div class="cart-subtototal">
+                    <div class="total-line products">
+                        <span class="label">totale parziale</span>
+                        <span class="value price">0</span>
+                    </div>
+                    <div class="total-line shipping">
+                        <span class="label">spedizione</span>
+                        <span class="value price">0</span>
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <span class="label">totale</span>
+                    <span class="value price total-price">0</span>
+                </div>
+                <div class="shipping-remaining">
+                    <span>
+                        Ti mancano ancora
+                        <strong>33 </strong>
+                        per avere <br>
+                        la 
+                        <strong>spedizione gratuita!</strong>
+                    </span>
+                </div>
+                <div class="cart-action">
+                    <div class="submit-btn product-btn">
+                        <a href="#" class="btn">Procedi con il checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
