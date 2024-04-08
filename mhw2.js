@@ -12,11 +12,11 @@ const cartMenu = document.querySelector(".cart-menu");
 
 cartBtn.addEventListener("click", () => {
     console.log("ciao")
-    overlay.classList.remove("hidden");
-    cartMenu.classList.remove("hidden");
+    overlay.classList.add("shown");
+    cartMenu.classList.add("open");
 })
 
 cartCloseBtn.addEventListener("click", () => {
-    overlay.classList.add("hidden");
-    cartMenu.classList.add("hidden");
+    overlay.classList.remove("shown");
+    cartMenu.classList.remove("open");
 })
