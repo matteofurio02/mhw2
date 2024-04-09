@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <script src="mhw2.js" defer></script>
 
     <title>MangaYo!</title>
 </head>
@@ -156,22 +155,16 @@
             </nav>
             <div class="homeslider-block">
                 <div class="homeslider">
-                    <div class="slider-container">
-                        <div class="stage">
-                                <div class="slider-element active">
-                                <a href="#" class="slider-item">
-                                    <img src="./images/img1.jpeg" alt="" class="slider-img media-hidden">
-                                </a>
+                    <div class="slider-container" id="image-slider">
+                        <div class="stage" id="slider" data-down-at="0">
+                            <div class="slider-element active">
+                                    <img src="./images/img1.jpeg" class="slider-img media-hidden" data-img="0" draggable="false">
                             </div>
                             <div class="slider-element">
-                                <a href="#" class="slider-item">
-                                    <img src="./images/img2.jpeg" alt="" class="slider-img media-hidden">
-                                </a>
+                                    <img src="./images/img2.jpeg" class="slider-img media-hidden" data-img="1" draggable="false">
                             </div>
                             <div class="slider-element">
-                                <a href="#" class="slider-item">
-                                    <img src="./images/img3.jpeg" alt="" class="slider-img media-hidden">
-                                </a>
+                                    <img src="./images/img3.jpeg" class="slider-img media-hidden" data-img="2" draggable="false">
                             </div>
                         </div>
                     </div>
@@ -822,5 +815,7 @@
             -->
         </div>
     </div>
+    <script src="mhw2.js"></script>
+
 </body>
 </html>
