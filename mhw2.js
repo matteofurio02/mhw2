@@ -1,6 +1,5 @@
 window.addEventListener("scroll", () => {
-    let header = document.querySelector(".nav-menu");
-    console.log("ciao");
+    const header = document.querySelector(".nav-menu");
     header.classList.toggle("sticky", window.scrollY > 140);
 })
 
@@ -16,7 +15,6 @@ const overlay = document.querySelector(".overlay-cart");
 const cartMenu = document.querySelector(".cart-menu");
 
 cartBtn.addEventListener("click", () => {
-    console.log("ciao")
     overlay.classList.add("shown");
     cartMenu.classList.add("open");
 })
@@ -33,7 +31,9 @@ cartCloseBtn.addEventListener("click", () => {
 */
 let isDown = false;
 let startX;
+let dist = 0
 const slider = document.querySelector('#slider');
+const images = document.querySelectorAll(".slider-element");
 
 const end = () => {
 	isDown = false;
@@ -49,9 +49,12 @@ const start = (e) => {
 const move = (e) => {
 	if(!isDown) return;
 
-  e.preventDefault();
-  const dist = (slider.dataset.downAt - e.clientX);
-  slider.style.transform = `translate3d(${-dist}px, 0, 0)`
+    e.preventDefault();
+    dist += (slider.dataset.downAt - e.clientX) / 1100;
+    if(dist > 1920) {
+
+    }
+    slider.style.transform = `translate3d(${-dist}%, 0, 0)`
 }
 
 (() => {
